@@ -1,0 +1,6 @@
+class HtmlBuilder
+  include _Builder
+
+  @filename: String
+  @sb: String
+end

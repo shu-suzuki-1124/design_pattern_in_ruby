@@ -1,0 +1,6 @@
+interface _Builder
+  def make_title: (String title) -> String
+  def make_string: (String str) -> String
+  def make_items: ([String, String, String] items) -> String
+  def close: -> nil
+end

@@ -1,6 +1,4 @@
-require "./lib/builder.rb"
-
-class TextBuilder < Builder
+class TextBuilder
   def initialize
     @sb = ""
   end

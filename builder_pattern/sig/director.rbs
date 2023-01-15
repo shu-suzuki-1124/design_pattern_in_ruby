@@ -1,0 +1,6 @@
+class Director
+  @builder: HtmlBuilder | TextBuilder
+
+  def initialize: (HtmlBuilder | TextBuilder builder) -> void
+  def construct: -> nil
+end

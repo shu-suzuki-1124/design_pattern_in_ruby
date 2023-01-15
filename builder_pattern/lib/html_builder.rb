@@ -1,6 +1,4 @@
-require "./lib/builder.rb"
-
-class HtmlBuilder < Builder
+class HtmlBuilder
   def initialize
     @filename = "utitled.html"
     @sb = ""

@@ -1,0 +1,10 @@
+class Main
+  @filetype: String
+
+  def initialize: (String filetype) -> void
+  def self.call: (String filetype) -> nil
+  def call: -> nil
+
+  private
+  def builder: -> (HtmlBuilder | TextBuilder)
+end

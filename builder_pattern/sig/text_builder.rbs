@@ -1,0 +1,6 @@
+class TextBuilder
+  include _Builder
+
+  @sb: String
+end
+
