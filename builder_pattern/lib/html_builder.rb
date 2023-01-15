@@ -45,9 +45,6 @@ class HtmlBuilder < Builder
     rescue => e
       pp e.message
     end
-  end
-
-  def get_html_result
-    @filename
+    puts "HTMLファイル: #{@filename}が作成されました"
   end
 end

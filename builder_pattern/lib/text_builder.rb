@@ -29,9 +29,6 @@ class TextBuilder < Builder
 
   def close
     @sb += "========================\n"
-  end
-
-  def get_text_result
-    @sb
+    puts @sb
   end
 end

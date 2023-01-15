@@ -12,21 +12,17 @@ class Main
   end
 
   def call
-    if @filetype == "html"
-      html_builder = HtmlBuilder.new
-      director = Director.new(html_builder)
-      director.construct
-      filename = html_builder.get_html_result
-      puts "HTMLファイル: #{filename}が作成されました"
-    elsif @filetype == "text"
-      text_builder = TextBuilder.new
-      director = Director.new(text_builder)
-      director.construct
-      result = text_builder.get_text_result
-      puts result
-    else
-      puts "please write html or text!!!"
-    end
+    director = Director.new(builder)
+    director.construct
+  end
+
+  private
+  
+  def builder
+    return HtmlBuilder.new if @filetype == "html"
+    return TextBuilder.new if @filetype == "text"
+
+    raise StandardError.new("引数にはhtmlかtextを指定してください")
   end
 end
 
