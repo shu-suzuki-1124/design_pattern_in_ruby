@@ -19,7 +19,7 @@ class Hand
 
   def is_weaker_than?(hand)
     fight(hand) == -1
-  en                 d
+  end
 
   def fight(hand)
     return 0 if self == hand
