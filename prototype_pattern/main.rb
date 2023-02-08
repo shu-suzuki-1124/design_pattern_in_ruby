@@ -4,10 +4,6 @@ require './underline_pen.rb'
 
 class Main
   def self.call
-    new.call
-  end
-
-  def call
     manager = Manager.new
     upen = UnderlinePen.new('-')
     mbox = MessageBox.new('*')

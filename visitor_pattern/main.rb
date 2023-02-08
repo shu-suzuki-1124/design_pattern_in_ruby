@@ -4,10 +4,6 @@ require "./directory.rb"
 
 class Main
   def self.call
-    new.call
-  end
-
-  def call
     puts "------------------------------------------------"
     puts "Making root entries..."
     rootdir = Directory.new("root")

@@ -4,9 +4,6 @@ require "./player.rb"
 
 class Main
   def self.call(num1, num2)
-    new.call(num1, num2)
-  end
-  def call(num1, num2)
     seed1 = Random.rand(0..2)
     seed2 = Random.rand(0..2)
 

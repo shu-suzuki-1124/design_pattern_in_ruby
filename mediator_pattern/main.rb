@@ -2,10 +2,6 @@ require "./login_frame.rb"
 
 class Main
   def self.call
-    new.call
-  end
-
-  def call
     frame = LoginFrame.new
 
     text_field = frame.text_field

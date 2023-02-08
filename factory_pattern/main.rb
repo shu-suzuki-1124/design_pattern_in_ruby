@@ -2,10 +2,6 @@ require './ID_card_factory.rb'
 
 class Main
   def self.call
-    new.call
-  end
-
-  def call
     factory = IDCardFactory.new
     card1 = factory.create("Shu Suzuki")
     card2 = factory.create("MESSI")

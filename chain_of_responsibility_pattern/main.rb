@@ -6,10 +6,6 @@ require "./trouble.rb"
 
 class Main
   def self.call
-    new.call
-  end
-
-  def call
     alice = NoSupport.new("Alice")
     bob = LimitSupport.new("Bob", 100)
     charlie = SpecialSupport.new("Charlie", 429)

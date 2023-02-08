@@ -4,10 +4,6 @@ require "./full_border.rb"
 
 class Main
   def self.call
-    new.call
-  end
-
-  def call
     b1 = StringDisplay.new("Hello, World")
     b1.show
     b2 = SideBorder.new(b1, "#")

@@ -4,10 +4,6 @@ require "./div_factory/div_factory.rb"
 
 class Main
   def self.call(filename, klass)
-    new.call(filename, klass)
-  end
-
-  def call(filename, klass)
     factory = Factory.factory(klass)
 
     # Blog

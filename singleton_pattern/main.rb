@@ -2,16 +2,7 @@ require './singleton_obj.rb'
 require './singleton_obj2.rb'
 
 class Main
-
   def self.call
-    new.call
-  end
-
-  def self.call2
-    new.call2
-  end
-
-  def call
     puts "Start."
 
     obj1 = SingletonObj.get_instance
@@ -26,7 +17,7 @@ class Main
     puts "End."
   end
 
-  def call2
+  def self.call2
     obj1 = SingletonObj2.instance
     obj1.counter += 1
     puts obj1.counter
